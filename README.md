@@ -1,5 +1,5 @@
 **VSD INTERNSHIP**
-**TASK 1:-***
+**TASK 1:-**
 **Installation of RISC-V toolchain using VDI. Uploading the snapshot of compiled C code and RISC-V Objdmp.**
 Installation:
 A. Oracle Virtual machine.
