@@ -1,39 +1,23 @@
 **VSD INTERNSHIP**
-TASK 1:-
-Installation of RISC-V toolchain using VDI. Uploading the snapshot of compiled C code and RISC-V Objdmp.
+**TASK 1:-***
+**Installation of RISC-V toolchain using VDI. Uploading the snapshot of compiled C code and RISC-V Objdmp.**
 Installation:
 A. Oracle Virtual machine.
-
-image
-
 B. Gedit editor.
-
-image
-
-Steps:
+**Flow**
 1.) Open Gedit and write the C code to find the sum of n numbers.
-
-Screenshot 2024-10-23 090141
 
 2.) Compile the above code using gcc and get the output.
 
-Screenshot 2024-10-23 090441
-
 3.) Now, compile and run the same code using the RISC-V Simulator and search for main using the command: "riscv64-unknown-elf-objdump -d sum.o | less" and then type out "/main".
-
-image
 
 4.) Changing it from O1 to Ofast.
 
-image
-
 5.) Search for main usin the commands: "riscv64-unknown-elf-objdump -d sum.o | less" and then type out "/main".
 
-image
-
-TASK 2:-
-Performing SPIKE Simulation and Observation with -O1 anf -Ofast. Debugging a simple C code with Interactive Debugging Mode using Spike and Uploading snapshot of compiled C code, RISC-V Objdmp.
-A. SPIKE Simulation and Observation with -O1 anf -Ofast. Upload snapshot of compiled C code, RISC-V Objdmp.
+**TASK 2:-
+Performing SPIKE Simulation and Observation with -O1 anf -Ofast. Debugging a simple C code with Interactive Debugging Mode using Spike and Uploading snapshot of compiled C code, RISC-V Objdmp.**
+**A. SPIKE Simulation and Observation with -O1 anf -Ofast. Upload snapshot of compiled C code, RISC-V Objdmp.**
 What is SPIKE in RISC-V?
 A RISC-V ISA is a simulator, enabling the testing and analysis of RISC-V programs without the need for actual hardware.
 
@@ -44,27 +28,19 @@ The RISC-V Proxy Kernel, pk , is a lightweight application execution environment
 
 A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.
 
-STEPS:
+**Flow:**
 1.) The C Code to find the sum of n numbers is the same code as used in Task 1. Following the instructions as shown below in the snapshot, we can observe the same output when 'gcc' command or 'spike' command is used.
-
-Screenshot 2024-10-29 122735
-
-Screenshot 2024-10-29 133317
 
 2.) Enter the below given instructions and debug using SPIKE:
 
 riscv64-unknown-elf-objdump -d sum1ton.o | less ( here -d is given for Debug)
 Screenshot 2024-10-29 133549
 
-WhatsApp Image 2024-10-29 at 14 00 56_33507c4b
-
 B. Write a simple C program for any simple application and compile with RISC-V GCC/SPIKE.
-TASK 3:-
+
+**TASK 3:-
 RISC-V Instruction Types (R,I,S,B,U,J):
-The RISC-V instruction set architecture (ISA) defines several types of instructions, each with a specific format. Below is a summary of the main instruction types:
-
-image
-
+The RISC-V instruction set architecture (ISA) defines several types of instructions, each with a specific format. Below is a summary of the main instruction types:**
 1.) R-Type (Register-Register):
 
 Purpose: Used for operations that involve two source registers and one destination register.
@@ -256,13 +232,12 @@ Binary Encoding: 0100000 00010 00101 000 00011 0110011
 Instruction Format: R-type
 Binary Encoding: 0000000 00011 00010 100 00001 0110011
 32-bit Instruction Code: 0x003100b3
-TASK 4:-
-By making use of RISC-V Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms
-NOTE: Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : iiitb_rv32i link
 
-Steps to perform functional simulation of RISCV:
-GTKWAVE Generation Process:
-Follow the steps given below to generate the waveform using Verilog code and GTKWAVE.
+***TASK 4:-
+By making use of RISC-V Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms
+NOTE: Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : iiitb_rv32i link**
+**GTKWAVE Generation Process:**
+Follow the guidelines given below to generate the waveform using Verilog code and GTKWAVE.
 
 1.) Clone the Repository.
 Clone the RISC-V Verilog repository using the 'git clone' command.
@@ -284,8 +259,6 @@ After compiling, simulate the Verilog code by running the compiled file.
 
 './iiitb_rv321'
 
-image
-
 5.) Open the Waveform in GTKWAVE.
 Once the simulation generates the .vcd (Value Change Dump) file, you can visualize the waveform in GTKWAVE.
 
@@ -293,15 +266,10 @@ Once the simulation generates the .vcd (Value Change Dump) file, you can visuali
 
 It will open the new window of GTKWAVE.
 
-image
-
 Tap the 'iiitb_rv32i_tb' in the 'SST' section.
-
-image
 
 Now, drag the command in the same way presented under 'time' section.
 
-image
 
 Select the instructions from EX_MEM_IR[31:0] to present the instructions used in Task 3 and Analysing the Output Waveform of various instructions that we have covered in TASK-3.
 
