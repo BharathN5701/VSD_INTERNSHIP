@@ -2,11 +2,13 @@
 **TASK 1:-**
 **Installation of RISC-V toolchain using VDI. Uploading the snapshot of compiled C code and RISC-V Objdmp.**
 Installation:
+
 A. Oracle Virtual machine.
 
 B. Gedit editor.
 
 **Flow**
+
 1.) Open Gedit and write the C code to find the sum of n numbers.
 
 2.) Compile the above code using gcc and get the output.
@@ -17,20 +19,25 @@ B. Gedit editor.
 
 5.) Search for main usin the commands: "riscv64-unknown-elf-objdump -d sum.o | less" and then type out "/main".
 
-**TASK 2:-
-Performing SPIKE Simulation and Observation with -O1 anf -Ofast. Debugging a simple C code with Interactive Debugging Mode using Spike and Uploading snapshot of compiled C code, RISC-V Objdmp.**
+**TASK 2:-**
+
+**Performing SPIKE Simulation and Observation with -O1 anf -Ofast. Debugging a simple C code with Interactive Debugging Mode using Spike and Uploading snapshot of compiled C code, RISC-V Objdmp.**
 **A. SPIKE Simulation and Observation with -O1 anf -Ofast. Upload snapshot of compiled C code, RISC-V Objdmp.**
-What is SPIKE in RISC-V?
+
+**What is SPIKE in RISC-V?**
+
 A RISC-V ISA is a simulator, enabling the testing and analysis of RISC-V programs without the need for actual hardware.
 
 Spike is a free, open-source C++ simulator for the RISC-V ISA that models a RISC-V core and cache system. It can be used to run programs and a Linux kernel, and can be a starting point for running software on a RISC-V target.
 
-What is pk (Proxy Kernel)?
+**What is pk (Proxy Kernel)?**
+
 The RISC-V Proxy Kernel, pk , is a lightweight application execution environment that can host statically-linked RISC-V ELF binaries.
 
 A Proxy Kernel in the RISC-V ecosystem simplifies the interaction between complex hardware and the software running on it, making it easier to manage, test, and develop software and hardware projects.
 
 **Flow:**
+
 1.) The C Code to find the sum of n numbers is the same code as used in Task 1. Following the instructions as shown below in the snapshot, we can observe the same output when 'gcc' command or 'spike' command is used.
 
 2.) Enter the below given instructions and debug using SPIKE:
@@ -40,9 +47,12 @@ Screenshot 2024-10-29 133549
 
 B. Write a simple C program for any simple application and compile with RISC-V GCC/SPIKE.
 
-**TASK 3:-
-RISC-V Instruction Types (R,I,S,B,U,J):
-The RISC-V instruction set architecture (ISA) defines several types of instructions, each with a specific format. Below is a summary of the main instruction types:**
+**TASK 3:-**
+
+**RISC-V Instruction Types (R,I,S,B,U,J):**
+
+**The RISC-V instruction set architecture (ISA) defines several types of instructions, each with a specific format. Below is a summary of the main instruction types:**
+
 1.) R-Type (Register-Register):
 
 Purpose: Used for operations that involve two source registers and one destination register.
@@ -235,10 +245,12 @@ Instruction Format: R-type
 Binary Encoding: 0000000 00011 00010 100 00001 0110011
 32-bit Instruction Code: 0x003100b3
 
-***TASK 4:-
-By making use of RISC-V Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms
-NOTE: Since the designing of RISCV Architecture and writing it's testbench is not the part of this Research Internship, so we will use the Verilog Code and Testbench of RISCV that has already been designed. The reference GitHub repository is : iiitb_rv32i link**
+**TASK 4:-**
+
+**By making use of RISC-V Core: Verilog Netlist and Testbench, perform an experiment of Functional Simulation and observe the waveforms**
+
 **GTKWAVE Generation Process:**
+
 Follow the guidelines given below to generate the waveform using Verilog code and GTKWAVE.
 
 1.) Clone the Repository.
